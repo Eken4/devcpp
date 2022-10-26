@@ -29,5 +29,10 @@ int Rectangle::Area() const
 // Afficher
 void Rectangle::Afficher()
 {
-    std::cout << "" << std::endl;
+    std::cout << "Longueur: " << this->length << std::endl;
+    std::cout << "Largeur: " << this->width << std::endl;
+    std::cout << "Coin supérieur gauche: " << std::endl;
+    this->upperLeftCorner.Afficher();
+    std::cout << "Périmètre: " << this->Perimeter() << std::endl;
+    std::cout << "Surface: " << this->Area() << std::endl;
 }

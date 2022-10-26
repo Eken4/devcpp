@@ -38,5 +38,9 @@ bool Cercle::IsInsideCircle(const Point &point)
 // afficher
 void Cercle::Afficher()
 {
-    std::cout << "" << std::endl;
+    std::cout << "Diamètre: " << this->diameter << std::endl;
+    std::cout << "Centre: " << std::endl;
+    this->center.Afficher();
+    std::cout << "Circonférence: " << this->Perimeter() << std::endl;
+    std::cout << "Surface: " << this->Area() << std::endl;
 }

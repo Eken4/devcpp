@@ -10,5 +10,7 @@ float Point::Distance(const Point &point) const
 
 void Point::Afficher()
 {
-    std::cout << "" << std::endl;
+    std::cout << "Coordonnées :" << std::endl;
+    std::cout << "x: " << x << std::endl;
+    std::cout << "y: " << y << std::endl;
 }

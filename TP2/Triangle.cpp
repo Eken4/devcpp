@@ -87,5 +87,17 @@ bool Triangle::IsEquilateral() const
 // Afficher
 void Triangle::Afficher()
 {
-    std::cout << "" << std::endl;
+    std::cout << "Sommet A :" << std::endl;
+    this->a.Afficher();
+    std::cout << "Sommet B :" << std::endl;
+    this->b.Afficher();
+    std::cout << "Sommet C :" << std::endl;
+    this->c.Afficher();
+    std::cout << "Longueur de la base: " << this->Base() << std::endl;
+    if (this->IsIsocele())
+        std::cout << "Ce triangle est isocèle" << std::endl;
+    if (this->IsEquilateral())
+        std::cout << "Ce triangle est équilatéral" << std::endl;
+    if (this->IsRectangle())
+        std::cout << "Ce triangle est rectangle" << std::endl;
 }
