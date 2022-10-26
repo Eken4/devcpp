@@ -24,15 +24,15 @@ public:
     inline void SetC(const Point &p) { this->c = p; }
 
     //  methods
-    std::array<float, 3> Sides();
+    std::array<float, 3> Sides() const;
 
-    float Base();
-    float Height();
-    float Area();
+    float Base() const;
+    float Height() const;
+    float Area() const;
 
-    bool IsIsocele();
-    bool IsRectangle();
-    bool IsEquilateral();
+    bool IsIsocele() const;
+    bool IsRectangle() const;
+    bool IsEquilateral() const;
 
     // afficher
     void Afficher();

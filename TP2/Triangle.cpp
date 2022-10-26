@@ -17,7 +17,7 @@ Triangle::~Triangle()
 }
 
 // methods
-std::array<float, 3> Triangle::Sides()
+std::array<float, 3> Triangle::Sides() const
 {
     std::array<float, 3> sides;
 
@@ -28,7 +28,7 @@ std::array<float, 3> Triangle::Sides()
     return sides;
 }
 
-float Triangle::Base()
+float Triangle::Base() const
 {
     std::array<float, 3> sides = this->Sides();
 
@@ -43,19 +43,19 @@ float Triangle::Base()
     return longerSide;
 }
 
-float Triangle::Height()
+float Triangle::Height() const
 // calculer milieu de Base
 {
     return (1);
 }
 
-float Triangle::Area()
+float Triangle::Area() const
 {
     return (this->Area() * this->Base()) / 2;
 }
 
 // Triangle type
-bool Triangle::IsIsocele()
+bool Triangle::IsIsocele() const
 {
     std::array<float, 3> sides = this->Sides();
 
@@ -63,7 +63,7 @@ bool Triangle::IsIsocele()
         sides[0] == sides[1] || sides[0] == sides[2] || sides[1] == sides[2]);
 }
 
-bool Triangle::IsRectangle()
+bool Triangle::IsRectangle() const
 // récupérer l'index de Base plutôt que tester toutes les combinaisons
 {
     std::array<float, 3> sides = this->Sides();
@@ -74,7 +74,7 @@ bool Triangle::IsRectangle()
         std::pow(sides[2], 2) == (std::pow(sides[1], 2) + std::pow(sides[0], 2)));
 }
 
-bool Triangle::IsEquilateral()
+bool Triangle::IsEquilateral() const
 {
     std::array<float, 3> sides = this->Sides();
 

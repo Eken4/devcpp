@@ -16,12 +16,12 @@ Rectangle::~Rectangle()
 
 // methods
 
-int Rectangle::Perimeter()
+int Rectangle::Perimeter() const
 {
     return (this->length * 2) + (this->width * 2);
 }
 
-int Rectangle::Area()
+int Rectangle::Area() const
 {
     return this->length * this->width;
 }

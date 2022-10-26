@@ -21,8 +21,8 @@ public:
     inline void SetCenter(const Point &center) { this->center = center; }
 
     // methods
-    float Perimeter();
-    float Area();
+    float Perimeter() const;
+    float Area() const;
     bool IsOnCirclePerimeter(const Point &point);
     bool IsInsideCircle(const Point &point);
 

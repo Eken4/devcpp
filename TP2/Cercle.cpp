@@ -15,12 +15,12 @@ Cercle::~Cercle()
 }
 
 // methods
-float Cercle::Perimeter()
+float Cercle::Perimeter() const
 {
     return 2 * M_PI * (this->diameter / 2);
 }
 
-float Cercle::Area()
+float Cercle::Area() const
 {
     return M_PI * pow(this->diameter / 2, 2);
 }

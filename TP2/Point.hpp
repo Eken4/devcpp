@@ -6,7 +6,7 @@ struct Point
     float x;
     float y;
 
-    float Distance(const Point &point);
+    float Distance(const Point &point) const;
     void Afficher();
 };
 

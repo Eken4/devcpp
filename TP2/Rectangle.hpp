@@ -8,7 +8,7 @@ class Rectangle
 public:
     // constructor
     Rectangle(int length, int width);
-    
+
     // destructor
     ~Rectangle();
 
@@ -23,8 +23,8 @@ public:
     inline void SetUpperLeftCorner(const Point &upperLeftCorner) { this->upperLeftCorner = upperLeftCorner; }
 
     // methods
-    int Perimeter();
-    int Area();
+    int Perimeter() const; 
+    int Area() const;
 
     // Afficher
     void Afficher();
