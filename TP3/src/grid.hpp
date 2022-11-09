@@ -19,8 +19,17 @@ public:
     // setters
     // methods
     Token getToken(int line, int column) { return this->grid[line][column]; };
-    void setToken(int line, int column, Token token) { this->grid[line][column] = token; };
+    void setToken(int line, int column, Token &token) { this->grid[line][column] = token; };
     bool spotIsEmpty(int line, int column) { return this->getToken(line, column) == Token::empty; };
+
+    // bool checkAlignment(const int line, const int column, const Token &token);
+    // bool checkLineAlignment(const int line, const Token &token);
+    // bool checkColumnAlignment(const int column, const Token &token);
+
+    // bool checkDiagonalAlignment(const int line, const int column, const Token &token);
+    // bool checkTopLeftToBottomRightAlignment(const int line, const int column, const Token &token);
+    // bool checkTopRightToBottomLeftAlignment(const int line, const int column, const Token &token);
+
     void displayGrid();
 
 private:
